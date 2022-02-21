@@ -54,7 +54,7 @@ public class FrmSeguimientoClientes extends javax.swing.JFrame {
         jLabel3.setText("ACUERDO_TRES");
 
         jLabel4.setForeground(new java.awt.Color(255, 0, 0));
-        jLabel4.setText("ACUERDO_UNO");
+        jLabel4.setText("remott");
 
         jLabel5.setForeground(new java.awt.Color(255, 0, 0));
         jLabel5.setText("CEDULA");
