@@ -54,16 +54,16 @@ public class FrmSeguimientoClientes extends javax.swing.JFrame {
         jLabel3.setText("ACUERDO_TRES");
 
         jLabel4.setForeground(new java.awt.Color(255, 0, 0));
-        jLabel4.setText("ACUERDO_TRES:");
+        jLabel4.setText("ACUERDO_UNO");
 
         jLabel5.setForeground(new java.awt.Color(255, 0, 0));
-        jLabel5.setText("ACUERDO_UNO");
+        jLabel5.setText("CEDULA");
 
         jLabel6.setForeground(new java.awt.Color(255, 0, 0));
-        jLabel6.setText("CEDULA");
+        jLabel6.setText("CIUDAD");
 
         jLabel7.setForeground(new java.awt.Color(255, 0, 0));
-        jLabel7.setText("CIUDAD");
+        jLabel7.setText("DEPARTAMENTO");
 
         jTextField1.setBackground(new java.awt.Color(204, 204, 255));
 
@@ -132,9 +132,11 @@ public class FrmSeguimientoClientes extends javax.swing.JFrame {
                     .addComponent(jLabel6)
                     .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(17, 17, 17)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel7)
-                    .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(3, 3, 3)))
                 .addContainerGap(75, Short.MAX_VALUE))
         );
 
