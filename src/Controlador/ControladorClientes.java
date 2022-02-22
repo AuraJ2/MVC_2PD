@@ -43,8 +43,8 @@ public void actionPerformed(ActionEvent e) {
                 + _view.txtEmail.getText() + "'," 
                 + _view.txtTelefonoResidencia.getText() + ","
                 + _view.txtTelefonoTrabajo.getText() + ","
-                + _view.txtNumeroFactura.getText() + ","
-                + _view.txtFechaCredito.getText() + ",'" 
+                + _view.txtNumeroFactura.getText() + ",'"
+                + _view.txtFechaCredito.getText() + "','" 
                 + _view.txtTipoCartera.getText() + "'," 
                 + _view.txtValorCredito.getText() + "," 
                 + _view.txtNumeroCuotas.getText());
