@@ -5,8 +5,10 @@
  */
 package mvc_java;
 
+import Controlador.ControladorClientes;
 import Controlador.ControladorMDB;
 import Modelo.MDB;
+import Vista.FrmClientes;
 import Vista.FrmVista;
 
 /**
@@ -23,12 +25,17 @@ public class MVC_Java {
         
         MDB objModelo=new MDB();
         FrmVista objVista=new FrmVista();
+        FrmClientes objClientes = new FrmClientes();
         ControladorMDB objController;
-        
+        ControladorClientes objControllerClientes;
       
         objController = new ControladorMDB(objVista,objModelo);
         objController.iniciar();
         objVista.setVisible(true);
+        
+        objControllerClientes = new ControladorClientes(objClientes, objModelo);
+        objControllerClientes.iniciar();
+        objClientes.setVisible(true);
         
         
         
