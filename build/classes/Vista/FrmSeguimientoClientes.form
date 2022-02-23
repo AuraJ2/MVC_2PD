@@ -38,11 +38,9 @@
                   <Component id="LabelAcuerdo1" min="-2" pref="91" max="-2" attributes="0"/>
                   <Component id="LabelFechaAcuerdo2" alignment="0" max="32767" attributes="0"/>
                   <Component id="LabelAcuerdo2" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
-                      <Component id="LabelFechaAcuerdo4" max="32767" attributes="0"/>
-                      <Component id="LabelFechaAcuerrdo3" max="32767" attributes="0"/>
-                      <Component id="LabelAcuerdo3" alignment="0" max="32767" attributes="0"/>
-                  </Group>
+                  <Component id="LabelFechaAcuerdo4" max="32767" attributes="0"/>
+                  <Component id="LabelFechaAcuerrdo3" max="32767" attributes="0"/>
+                  <Component id="LabelAcuerdo3" alignment="0" max="32767" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
@@ -303,7 +301,7 @@
     <Component class="javax.swing.JTextField" name="txtFechaAcuerdo1">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="cc" green="cc" red="cc" type="rgb"/>
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
         </Property>
       </Properties>
       <AuxValues>

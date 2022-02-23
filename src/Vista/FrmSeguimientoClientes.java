@@ -5,7 +5,7 @@
  */
 package Vista;
 
-/**
+/** 
  *
  * @author GERARDO
  */
@@ -105,7 +105,7 @@ public class FrmSeguimientoClientes extends javax.swing.JFrame {
             }
         });
 
-        txtFechaAcuerdo1.setBackground(new java.awt.Color(204, 204, 204));
+        txtFechaAcuerdo1.setBackground(new java.awt.Color(255, 255, 255));
 
         LabelFechaAcuerdo2.setForeground(new java.awt.Color(204, 0, 204));
         LabelFechaAcuerdo2.setText("Fecha de Acuerdo 2");
@@ -189,10 +189,9 @@ public class FrmSeguimientoClientes extends javax.swing.JFrame {
                     .addComponent(LabelAcuerdo1, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(LabelFechaAcuerdo2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(LabelAcuerdo2)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(LabelFechaAcuerdo4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(LabelFechaAcuerrdo3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(LabelAcuerdo3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addComponent(LabelFechaAcuerdo4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(LabelFechaAcuerrdo3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(LabelAcuerdo3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(txtFechaAcuerdo4)
