@@ -55,6 +55,22 @@ public class FrmSeguimientoClientes extends javax.swing.JFrame {
         jTextField12 = new javax.swing.JTextField();
         jTextField13 = new javax.swing.JTextField();
         jTextField14 = new javax.swing.JTextField();
+        LabelFechaAcuerdo1 = new javax.swing.JLabel();
+        txtAcuerdo1 = new javax.swing.JTextField();
+        txtFechaAcuerdo1 = new javax.swing.JTextField();
+        LabelFechaAcuerdo2 = new javax.swing.JLabel();
+        LabelAcuerdo1 = new javax.swing.JLabel();
+        LabelAcuerdo2 = new javax.swing.JLabel();
+        LabelFechaAcuerrdo3 = new javax.swing.JLabel();
+        LabelAcuerdo4 = new javax.swing.JLabel();
+        LabelAcuerdo3 = new javax.swing.JLabel();
+        LabelFechaAcuerdo4 = new javax.swing.JLabel();
+        txtFechaAcuerdo2 = new javax.swing.JTextField();
+        txtAcuerdo2 = new javax.swing.JTextField();
+        txtFechaAcuerdo4 = new javax.swing.JTextField();
+        txtFechaAcuerdo3 = new javax.swing.JTextField();
+        txtAcuerdo4 = new javax.swing.JTextField();
+        txtAcuerdo3 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -137,6 +153,87 @@ public class FrmSeguimientoClientes extends javax.swing.JFrame {
         });
 
         jTextField14.setBackground(new java.awt.Color(204, 204, 255));
+        jTextField14.setRequestFocusEnabled(false);
+        jTextField14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField14ActionPerformed(evt);
+            }
+        });
+
+        LabelFechaAcuerdo1.setForeground(new java.awt.Color(204, 0, 204));
+        LabelFechaAcuerdo1.setText("Fecha Acuerdo 1");
+
+        txtAcuerdo1.setBackground(new java.awt.Color(255, 255, 255));
+        txtAcuerdo1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtAcuerdo1ActionPerformed(evt);
+            }
+        });
+
+        txtFechaAcuerdo1.setBackground(new java.awt.Color(255, 255, 255));
+
+        LabelFechaAcuerdo2.setForeground(new java.awt.Color(204, 0, 204));
+        LabelFechaAcuerdo2.setText("Fecha de Acuerdo 2");
+
+        LabelAcuerdo1.setForeground(new java.awt.Color(204, 0, 204));
+        LabelAcuerdo1.setText("Acuerdo 1");
+
+        LabelAcuerdo2.setForeground(new java.awt.Color(204, 0, 204));
+        LabelAcuerdo2.setText("Acuerdo 2");
+
+        LabelFechaAcuerrdo3.setForeground(new java.awt.Color(204, 0, 204));
+        LabelFechaAcuerrdo3.setText("Fecha Acuerdo 3");
+
+        LabelAcuerdo4.setForeground(new java.awt.Color(204, 0, 204));
+        LabelAcuerdo4.setText("Acuerdo 4");
+
+        LabelAcuerdo3.setForeground(new java.awt.Color(204, 0, 204));
+        LabelAcuerdo3.setText("Acuerdo 3");
+
+        LabelFechaAcuerdo4.setForeground(new java.awt.Color(204, 0, 204));
+        LabelFechaAcuerdo4.setText("Fecha Acuerdo 4");
+
+        txtFechaAcuerdo2.setBackground(new java.awt.Color(255, 255, 255));
+        txtFechaAcuerdo2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtFechaAcuerdo2ActionPerformed(evt);
+            }
+        });
+
+        txtAcuerdo2.setBackground(new java.awt.Color(255, 255, 255));
+        txtAcuerdo2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtAcuerdo2ActionPerformed(evt);
+            }
+        });
+
+        txtFechaAcuerdo4.setBackground(new java.awt.Color(255, 255, 255));
+        txtFechaAcuerdo4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtFechaAcuerdo4ActionPerformed(evt);
+            }
+        });
+
+        txtFechaAcuerdo3.setBackground(new java.awt.Color(255, 255, 255));
+        txtFechaAcuerdo3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtFechaAcuerdo3ActionPerformed(evt);
+            }
+        });
+
+        txtAcuerdo4.setBackground(new java.awt.Color(255, 255, 255));
+        txtAcuerdo4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtAcuerdo4ActionPerformed(evt);
+            }
+        });
+
+        txtAcuerdo3.setBackground(new java.awt.Color(255, 255, 255));
+        txtAcuerdo3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtAcuerdo3ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -145,38 +242,65 @@ public class FrmSeguimientoClientes extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(116, 116, 116)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel2)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel3)
-                        .addComponent(jLabel4)
-                        .addComponent(jLabel5)
-                        .addComponent(jLabel6)
-                        .addComponent(jLabel7)
-                        .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addComponent(jLabel11)
-                    .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(8, 8, 8)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jTextField14, javax.swing.GroupLayout.DEFAULT_SIZE, 112, Short.MAX_VALUE)
-                    .addComponent(jTextField13)
-                    .addComponent(jTextField12)
-                    .addComponent(jTextField11)
-                    .addComponent(jTextField9, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jTextField8, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jTextField6, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jTextField5)
-                    .addComponent(jTextField4)
-                    .addComponent(jTextField3)
-                    .addComponent(jTextField2)
-                    .addComponent(jTextField7, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jTextField10))
-                .addGap(81, 81, 81))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(LabelAcuerdo4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(LabelFechaAcuerdo1)
+                            .addComponent(LabelAcuerdo1, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(LabelFechaAcuerdo2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(LabelAcuerdo2)
+                            .addComponent(LabelFechaAcuerdo4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(LabelFechaAcuerrdo3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(LabelAcuerdo3, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 60, Short.MAX_VALUE)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(txtFechaAcuerdo3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 154, Short.MAX_VALUE)
+                                    .addComponent(txtAcuerdo3, javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(txtFechaAcuerdo4, javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(txtAcuerdo4, javax.swing.GroupLayout.Alignment.TRAILING)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(60, 60, 60)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(txtAcuerdo2, javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(txtAcuerdo1, javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(txtFechaAcuerdo1)
+                                    .addComponent(txtFechaAcuerdo2)))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jLabel2)
+                                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jLabel3)
+                                .addComponent(jLabel4)
+                                .addComponent(jLabel5)
+                                .addComponent(jLabel6)
+                                .addComponent(jLabel7)
+                                .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jLabel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(jLabel11)
+                            .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(8, 8, 8)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jTextField13)
+                            .addComponent(jTextField12)
+                            .addComponent(jTextField11)
+                            .addComponent(jTextField9, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jTextField8, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jTextField6, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jTextField5)
+                            .addComponent(jTextField4)
+                            .addComponent(jTextField3)
+                            .addComponent(jTextField2)
+                            .addComponent(jTextField7, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jTextField1, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jTextField10)
+                            .addComponent(jTextField14, javax.swing.GroupLayout.Alignment.TRAILING))))
+                .addGap(39, 39, 39))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -239,7 +363,39 @@ public class FrmSeguimientoClientes extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTextField14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(84, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 488, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(LabelFechaAcuerdo1)
+                    .addComponent(txtFechaAcuerdo1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(21, 21, 21)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(txtAcuerdo1)
+                    .addComponent(LabelAcuerdo1, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(LabelFechaAcuerdo2, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtFechaAcuerdo2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(LabelAcuerdo2)
+                    .addComponent(txtAcuerdo2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(LabelFechaAcuerrdo3)
+                    .addComponent(txtFechaAcuerdo3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(LabelAcuerdo3)
+                    .addComponent(txtAcuerdo3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(LabelFechaAcuerdo4)
+                    .addComponent(txtFechaAcuerdo4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(LabelAcuerdo4)
+                    .addComponent(txtAcuerdo4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(26, 26, 26))
         );
 
         pack();
@@ -252,6 +408,38 @@ public class FrmSeguimientoClientes extends javax.swing.JFrame {
     private void jTextField13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField13ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField13ActionPerformed
+
+    private void txtAcuerdo1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtAcuerdo1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtAcuerdo1ActionPerformed
+
+    private void txtFechaAcuerdo2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtFechaAcuerdo2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtFechaAcuerdo2ActionPerformed
+
+    private void txtAcuerdo2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtAcuerdo2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtAcuerdo2ActionPerformed
+
+    private void txtFechaAcuerdo4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtFechaAcuerdo4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtFechaAcuerdo4ActionPerformed
+
+    private void txtFechaAcuerdo3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtFechaAcuerdo3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtFechaAcuerdo3ActionPerformed
+
+    private void txtAcuerdo4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtAcuerdo4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtAcuerdo4ActionPerformed
+
+    private void txtAcuerdo3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtAcuerdo3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtAcuerdo3ActionPerformed
+
+    private void jTextField14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField14ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField14ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -289,6 +477,14 @@ public class FrmSeguimientoClientes extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel LabelAcuerdo1;
+    private javax.swing.JLabel LabelAcuerdo2;
+    private javax.swing.JLabel LabelAcuerdo3;
+    private javax.swing.JLabel LabelAcuerdo4;
+    private javax.swing.JLabel LabelFechaAcuerdo1;
+    private javax.swing.JLabel LabelFechaAcuerdo2;
+    private javax.swing.JLabel LabelFechaAcuerdo4;
+    private javax.swing.JLabel LabelFechaAcuerrdo3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -317,5 +513,13 @@ public class FrmSeguimientoClientes extends javax.swing.JFrame {
     public javax.swing.JTextField jTextField7;
     public javax.swing.JTextField jTextField8;
     public javax.swing.JTextField jTextField9;
+    public javax.swing.JTextField txtAcuerdo1;
+    public javax.swing.JTextField txtAcuerdo2;
+    public javax.swing.JTextField txtAcuerdo3;
+    public javax.swing.JTextField txtAcuerdo4;
+    public javax.swing.JTextField txtFechaAcuerdo1;
+    public javax.swing.JTextField txtFechaAcuerdo2;
+    public javax.swing.JTextField txtFechaAcuerdo3;
+    public javax.swing.JTextField txtFechaAcuerdo4;
     // End of variables declaration//GEN-END:variables
 }
