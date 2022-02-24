@@ -37,7 +37,6 @@ public class FrmVista extends javax.swing.JFrame {
         lblUsuario = new javax.swing.JLabel();
         lblPsw = new javax.swing.JLabel();
         cmdEliminar = new javax.swing.JButton();
-        jTextField1 = new javax.swing.JTextField();
 
         jButton1.setText("jButton1");
 
@@ -74,17 +73,11 @@ public class FrmVista extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(cmdEliminar)
                 .addContainerGap(95, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(54, 54, 54))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(15, 15, 15)
+                .addGap(45, 45, 45)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblNombre))
@@ -151,7 +144,6 @@ public class FrmVista extends javax.swing.JFrame {
     public javax.swing.JButton cmdEliminar;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
-    private javax.swing.JTextField jTextField1;
     private javax.swing.JLabel lblNombre;
     private javax.swing.JLabel lblPsw;
     private javax.swing.JLabel lblUsuario;

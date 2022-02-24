@@ -7,8 +7,10 @@ package mvc_java;
 
 import Controlador.ControladorClientes;
 import Controlador.ControladorMDB;
+import Controlador.ControladorSeguimientoClientes;
 import Modelo.MDB;
 import Vista.FrmClientes;
+import Vista.FrmSeguimientoClientes;
 import Vista.FrmVista;
 
 /**
@@ -26,18 +28,23 @@ public class MVC_Java {
         MDB objModelo=new MDB();
         FrmVista objVista=new FrmVista();
         FrmClientes objClientes = new FrmClientes();
+        FrmSeguimientoClientes objSeguimiento = new FrmSeguimientoClientes();
         ControladorMDB objController;
         ControladorClientes objControllerClientes;
+        ControladorSeguimientoClientes objControllerSiguimiento;
       
-        objController = new ControladorMDB(objVista,objModelo);
-        objController.iniciar();
-        objVista.setVisible(true);
-        
-        objControllerClientes = new ControladorClientes(objClientes, objModelo);
-        objControllerClientes.iniciar();
-        objClientes.setVisible(true);
-        
-        
+//        objController = new ControladorMDB(objVista,objModelo);
+//        objController.iniciar();
+//        objVista.setVisible(true);
+//        
+//        objControllerClientes = new ControladorClientes(objClientes, objModelo);
+//        objControllerClientes.iniciar();
+//        objClientes.setVisible(true);
+//        
+          objControllerSiguimiento = new ControladorSeguimientoClientes(objSeguimiento, objModelo);
+          objControllerSiguimiento.iniciar();
+          objSeguimiento.setVisible(true);
+          
         
     }
     
