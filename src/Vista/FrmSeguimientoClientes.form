@@ -31,16 +31,15 @@
                   </Group>
                   <Group type="102" attributes="0">
                       <EmptySpace min="-2" pref="397" max="-2" attributes="0"/>
-                      <Component id="CmdBajasSegClientes" min="-2" pref="121" max="-2" attributes="0"/>
+                      <Component id="cmdEliminarSeguimiento" min="-2" pref="121" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
-                      <Component id="cmdAlttasSegClientes" min="-2" pref="118" max="-2" attributes="0"/>
+                      <Component id="cmdAltasSeguimiento" min="-2" pref="118" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="19" pref="19" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jLabel9" min="-2" pref="117" max="-2" attributes="0"/>
                                   <Component id="jLabel6" min="-2" pref="42" max="-2" attributes="0"/>
                                   <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
                                       <Group type="102" attributes="0">
@@ -59,18 +58,19 @@
                                               <Component id="jLabel19" min="-2" pref="130" max="-2" attributes="0"/>
                                           </Group>
                                           <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
-                                          <Component id="jTextField10" min="-2" pref="108" max="-2" attributes="0"/>
+                                          <Component id="txtEmail" min="-2" pref="108" max="-2" attributes="0"/>
                                       </Group>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <Component id="jLabel18" min="-2" pref="54" max="-2" attributes="0"/>
-                                          <EmptySpace min="-2" pref="103" max="-2" attributes="0"/>
-                                          <Component id="txtNombre1" min="-2" pref="108" max="-2" attributes="0"/>
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <Component id="jLabel18" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="32767" attributes="0"/>
+                                          <Component id="txtProfesion" min="-2" pref="108" max="-2" attributes="0"/>
                                       </Group>
                                       <Component id="txtRecidencia" alignment="1" min="-2" pref="108" max="-2" attributes="0"/>
                                       <Component id="txtCiudad" alignment="1" min="-2" pref="108" max="-2" attributes="0"/>
                                       <Component id="txtTelResi" alignment="1" min="-2" pref="108" max="-2" attributes="0"/>
                                   </Group>
                                   <Component id="jLabel17" alignment="0" min="-2" pref="104" max="-2" attributes="0"/>
+                                  <Component id="jLabel9" alignment="0" min="-2" pref="124" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace pref="151" max="32767" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
@@ -120,14 +120,14 @@
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
                           <Component id="txtNumFact" pref="118" max="32767" attributes="0"/>
                           <Component id="txtSalud" alignment="0" max="32767" attributes="0"/>
-                          <Component id="txtFechaAc1" alignment="0" max="32767" attributes="0"/>
                           <Component id="txtCobro" alignment="0" max="32767" attributes="0"/>
                           <Component id="txtSeguro" alignment="0" max="32767" attributes="0"/>
                           <Component id="txtFechaMora" alignment="1" max="32767" attributes="0"/>
                           <Component id="txtDiasMora" alignment="1" max="32767" attributes="0"/>
                           <Component id="txtCartera" max="32767" attributes="0"/>
-                          <Component id="txtSeguro1" alignment="0" max="32767" attributes="0"/>
+                          <Component id="txtInteresMora" alignment="0" max="32767" attributes="0"/>
                           <Component id="txtValorMora" alignment="0" max="32767" attributes="0"/>
+                          <Component id="txtFechaAc1" alignment="0" max="32767" attributes="0"/>
                       </Group>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
@@ -276,7 +276,7 @@
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="txtNombre1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtProfesion" min="-2" max="-2" attributes="0"/>
                                   <Component id="jLabel18" min="-2" pref="30" max="-2" attributes="0"/>
                               </Group>
                           </Group>
@@ -308,7 +308,7 @@
                               </Group>
                               <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jTextField10" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtEmail" alignment="1" min="-2" max="-2" attributes="0"/>
                                   <Group type="102" attributes="0">
                                       <Component id="jLabel10" min="-2" pref="25" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
@@ -341,7 +341,7 @@
                                   </Group>
                                   <Group type="102" alignment="1" attributes="0">
                                       <Group type="103" groupAlignment="3" attributes="0">
-                                          <Component id="txtSeguro1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="txtInteresMora" alignment="3" min="-2" max="-2" attributes="0"/>
                                           <Component id="jLabel26" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
                                       </Group>
                                       <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
@@ -368,8 +368,8 @@
                       </Group>
                       <EmptySpace min="-2" pref="106" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="cmdAlttasSegClientes" alignment="1" min="-2" pref="58" max="-2" attributes="0"/>
-                          <Component id="CmdBajasSegClientes" alignment="1" min="-2" pref="58" max="-2" attributes="0"/>
+                          <Component id="cmdAltasSeguimiento" alignment="1" min="-2" pref="58" max="-2" attributes="0"/>
+                          <Component id="cmdEliminarSeguimiento" alignment="1" min="-2" pref="58" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
@@ -486,7 +486,7 @@
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
       </AuxValues>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField10">
+    <Component class="javax.swing.JTextField" name="txtEmail">
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
       </AuxValues>
@@ -499,17 +499,6 @@
     <Component class="javax.swing.JTextField" name="txtFechAc3">
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtFechAc3ActionPerformed"/>
-      </Events>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
-      </AuxValues>
-    </Component>
-    <Component class="javax.swing.JTextField" name="txtFechaAc1">
-      <Properties>
-        <Property name="requestFocusEnabled" type="boolean" value="false"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtFechaAc1ActionPerformed"/>
       </Events>
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
@@ -570,18 +559,27 @@
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
       </AuxValues>
     </Component>
-    <Component class="javax.swing.JButton" name="cmdAlttasSegClientes">
+    <Component class="javax.swing.JButton" name="cmdAltasSeguimiento">
       <Properties>
         <Property name="text" type="java.lang.String" value="Altas"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmdAltasSeguimientoActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
     </Component>
-    <Component class="javax.swing.JButton" name="CmdBajasSegClientes">
+    <Component class="javax.swing.JButton" name="cmdEliminarSeguimiento">
       <Properties>
         <Property name="text" type="java.lang.String" value="Eliminar"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="CmdBajasSegClientesActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmdEliminarSeguimientoActionPerformed"/>
       </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel15">
     </Component>
@@ -610,7 +608,7 @@
         <Property name="text" type="java.lang.String" value="Profesion"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="txtNombre1">
+    <Component class="javax.swing.JTextField" name="txtProfesion">
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
       </AuxValues>
@@ -708,7 +706,7 @@
         <Property name="text" type="java.lang.String" value="Interes mora"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="txtSeguro1">
+    <Component class="javax.swing.JTextField" name="txtInteresMora">
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
       </AuxValues>
@@ -729,6 +727,11 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="txtCobro">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtFechaAc1">
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
       </AuxValues>

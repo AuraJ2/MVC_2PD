@@ -43,10 +43,9 @@ public class FrmSeguimientoClientes extends javax.swing.JFrame {
         jLabel14 = new javax.swing.JLabel();
         txtDiasMora = new javax.swing.JTextField();
         txtRecidencia = new javax.swing.JTextField();
-        jTextField10 = new javax.swing.JTextField();
+        txtEmail = new javax.swing.JTextField();
         txtFechaAc2 = new javax.swing.JTextField();
         txtFechAc3 = new javax.swing.JTextField();
-        txtFechaAc1 = new javax.swing.JTextField();
         txtAcuerdo1 = new javax.swing.JTextField();
         LabelAcuerdo1 = new javax.swing.JLabel();
         LabelAcuerdo2 = new javax.swing.JLabel();
@@ -55,15 +54,15 @@ public class FrmSeguimientoClientes extends javax.swing.JFrame {
         txtFechaAcuerdo4 = new javax.swing.JTextField();
         txtAcuerdo4 = new javax.swing.JTextField();
         txtAcuerdo3 = new javax.swing.JTextField();
-        cmdAlttasSegClientes = new javax.swing.JButton();
-        CmdBajasSegClientes = new javax.swing.JButton();
+        cmdAltasSeguimiento = new javax.swing.JButton();
+        cmdEliminarSeguimiento = new javax.swing.JButton();
         jLabel15 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
         txtLugarEx = new javax.swing.JTextField();
         jLabel17 = new javax.swing.JLabel();
         txtNombre = new javax.swing.JTextField();
         jLabel18 = new javax.swing.JLabel();
-        txtNombre1 = new javax.swing.JTextField();
+        txtProfesion = new javax.swing.JTextField();
         jLabel19 = new javax.swing.JLabel();
         txtTelResi = new javax.swing.JTextField();
         jLabel20 = new javax.swing.JLabel();
@@ -79,11 +78,12 @@ public class FrmSeguimientoClientes extends javax.swing.JFrame {
         jLabel25 = new javax.swing.JLabel();
         txtSeguro = new javax.swing.JTextField();
         jLabel26 = new javax.swing.JLabel();
-        txtSeguro1 = new javax.swing.JTextField();
+        txtInteresMora = new javax.swing.JTextField();
         jLabel27 = new javax.swing.JLabel();
         txtSalud = new javax.swing.JTextField();
         jLabel28 = new javax.swing.JLabel();
         txtCobro = new javax.swing.JTextField();
+        txtFechaAc1 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -127,13 +127,6 @@ public class FrmSeguimientoClientes extends javax.swing.JFrame {
             }
         });
 
-        txtFechaAc1.setRequestFocusEnabled(false);
-        txtFechaAc1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtFechaAc1ActionPerformed(evt);
-            }
-        });
-
         txtAcuerdo1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtAcuerdo1ActionPerformed(evt);
@@ -170,12 +163,17 @@ public class FrmSeguimientoClientes extends javax.swing.JFrame {
             }
         });
 
-        cmdAlttasSegClientes.setText("Altas");
-
-        CmdBajasSegClientes.setText("Eliminar");
-        CmdBajasSegClientes.addActionListener(new java.awt.event.ActionListener() {
+        cmdAltasSeguimiento.setText("Altas");
+        cmdAltasSeguimiento.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                CmdBajasSegClientesActionPerformed(evt);
+                cmdAltasSeguimientoActionPerformed(evt);
+            }
+        });
+
+        cmdEliminarSeguimiento.setText("Eliminar");
+        cmdEliminarSeguimiento.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cmdEliminarSeguimientoActionPerformed(evt);
             }
         });
 
@@ -252,15 +250,14 @@ public class FrmSeguimientoClientes extends javax.swing.JFrame {
                         .addComponent(jLabel15))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(397, 397, 397)
-                        .addComponent(CmdBajasSegClientes, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(cmdEliminarSeguimiento, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(40, 40, 40)
-                        .addComponent(cmdAlttasSegClientes, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(cmdAltasSeguimiento, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(19, 19, 19)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                         .addGroup(layout.createSequentialGroup()
@@ -276,15 +273,16 @@ public class FrmSeguimientoClientes extends javax.swing.JFrame {
                                                 .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                 .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
                                             .addGap(27, 27, 27)
-                                            .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                            .addComponent(jLabel18, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addGap(103, 103, 103)
-                                            .addComponent(txtNombre1, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addComponent(txtEmail, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGroup(layout.createSequentialGroup()
+                                            .addComponent(jLabel18)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                            .addComponent(txtProfesion, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE))
                                         .addComponent(txtRecidencia, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addComponent(txtCiudad, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addComponent(txtTelResi, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 151, Short.MAX_VALUE)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -321,14 +319,14 @@ public class FrmSeguimientoClientes extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(txtNumFact, javax.swing.GroupLayout.DEFAULT_SIZE, 118, Short.MAX_VALUE)
                             .addComponent(txtSalud)
-                            .addComponent(txtFechaAc1)
                             .addComponent(txtCobro)
                             .addComponent(txtSeguro)
                             .addComponent(txtFechaMora, javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(txtDiasMora, javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(txtCartera)
-                            .addComponent(txtSeguro1)
-                            .addComponent(txtValorMora))
+                            .addComponent(txtInteresMora)
+                            .addComponent(txtValorMora)
+                            .addComponent(txtFechaAc1))
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -434,7 +432,7 @@ public class FrmSeguimientoClientes extends javax.swing.JFrame {
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(11, 11, 11)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(txtNombre1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtProfesion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jLabel18, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(60, 60, 60)
@@ -457,7 +455,7 @@ public class FrmSeguimientoClientes extends javax.swing.JFrame {
                                     .addComponent(txtDepa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(11, 11, 11)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jTextField10, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtEmail, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(4, 4, 4)))
@@ -482,7 +480,7 @@ public class FrmSeguimientoClientes extends javax.swing.JFrame {
                                         .addGap(62, 62, 62))
                                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                            .addComponent(txtSeguro1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(txtInteresMora, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addComponent(jLabel26, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
                                         .addGap(18, 18, 18)))
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -500,8 +498,8 @@ public class FrmSeguimientoClientes extends javax.swing.JFrame {
                                     .addComponent(txtFechaAc1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                         .addGap(106, 106, 106)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(cmdAlttasSegClientes, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(CmdBajasSegClientes, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(cmdAltasSeguimiento, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(cmdEliminarSeguimiento, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(txtAcuerdo3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -552,13 +550,9 @@ public class FrmSeguimientoClientes extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtAcuerdo3ActionPerformed
 
-    private void txtFechaAc1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtFechaAc1ActionPerformed
+    private void cmdEliminarSeguimientoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdEliminarSeguimientoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtFechaAc1ActionPerformed
-
-    private void CmdBajasSegClientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CmdBajasSegClientesActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_CmdBajasSegClientesActionPerformed
+    }//GEN-LAST:event_cmdEliminarSeguimientoActionPerformed
 
     private void txtTelResiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTelResiActionPerformed
         // TODO add your handling code here:
@@ -587,6 +581,10 @@ public class FrmSeguimientoClientes extends javax.swing.JFrame {
     private void txtSeguroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtSeguroActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtSeguroActionPerformed
+
+    private void cmdAltasSeguimientoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdAltasSeguimientoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cmdAltasSeguimientoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -624,11 +622,11 @@ public class FrmSeguimientoClientes extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton CmdBajasSegClientes;
     private javax.swing.JLabel LabelAcuerdo1;
     private javax.swing.JLabel LabelAcuerdo2;
     private javax.swing.JLabel LabelFechaAcuerdo4;
-    private javax.swing.JButton cmdAlttasSegClientes;
+    public javax.swing.JButton cmdAltasSeguimiento;
+    public javax.swing.JButton cmdEliminarSeguimiento;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel12;
@@ -654,7 +652,6 @@ public class FrmSeguimientoClientes extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
-    public javax.swing.JTextField jTextField10;
     public javax.swing.JTextField txtAcuerdo1;
     public javax.swing.JTextField txtAcuerdo2;
     public javax.swing.JTextField txtAcuerdo3;
@@ -665,19 +662,20 @@ public class FrmSeguimientoClientes extends javax.swing.JFrame {
     public javax.swing.JTextField txtCobro;
     public javax.swing.JTextField txtDepa;
     public javax.swing.JTextField txtDiasMora;
+    public javax.swing.JTextField txtEmail;
     public javax.swing.JTextField txtFechAc3;
     public javax.swing.JTextField txtFechaAc1;
     public javax.swing.JTextField txtFechaAc2;
     public javax.swing.JTextField txtFechaAcuerdo4;
     public javax.swing.JTextField txtFechaMora;
+    public javax.swing.JTextField txtInteresMora;
     public javax.swing.JTextField txtLugarEx;
     public javax.swing.JTextField txtNombre;
-    public javax.swing.JTextField txtNombre1;
     public javax.swing.JTextField txtNumFact;
+    public javax.swing.JTextField txtProfesion;
     public javax.swing.JTextField txtRecidencia;
     public javax.swing.JTextField txtSalud;
     public javax.swing.JTextField txtSeguro;
-    public javax.swing.JTextField txtSeguro1;
     public javax.swing.JTextField txtTelResi;
     public javax.swing.JTextField txtTelTra;
     public javax.swing.JTextField txtValorMora;
