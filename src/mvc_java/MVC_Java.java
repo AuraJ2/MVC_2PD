@@ -33,14 +33,14 @@ public class MVC_Java {
         ControladorClientes objControllerClientes;
         ControladorSeguimientoClientes objControllerSiguimiento;
       
-//        objController = new ControladorMDB(objVista,objModelo);
-//        objController.iniciar();
-//        objVista.setVisible(true);
-//        
-//        objControllerClientes = new ControladorClientes(objClientes, objModelo);
-//        objControllerClientes.iniciar();
-//        objClientes.setVisible(true);
-//        
+        objController = new ControladorMDB(objVista,objModelo);
+        objController.iniciar();
+        objVista.setVisible(true);
+        
+        objControllerClientes = new ControladorClientes(objClientes, objModelo);
+        objControllerClientes.iniciar();
+        objClientes.setVisible(true);
+        
           objControllerSiguimiento = new ControladorSeguimientoClientes(objSeguimiento, objModelo);
           objControllerSiguimiento.iniciar();
           objSeguimiento.setVisible(true);
